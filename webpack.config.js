@@ -14,7 +14,7 @@ module.exports = {
     filename: "index_bundle.js"
   },
 	resolve: {
-		extensions: ['', '.js', '.scss', '.css']
+		extensions: ['', '.js','.json', '.scss', '.css']
 	},
 	plugins: [
 		new webpack.optimize.UglifyJsPlugin({
@@ -33,6 +33,10 @@ module.exports = {
 			{
 			 test: /\.scss$/,
 			 loader: 'style!css!sass?outputStyle=compressed'
+		  },
+			{
+			 test: /\.json$/,
+			 loader: 'json-loader'
 		  }
 		]
 	},

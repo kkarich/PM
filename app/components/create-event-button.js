@@ -1,7 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Button from 'grommet/components/Button';
+import CloudIcon from 'grommet/components/icons/base/Cloud';
 
-export default function CreateEventButton () {
+
+export default function CreateEventButton() {
   return (
-      <button class="btn btn-danger">Create</button>
+    <Button label='Create'
+      href='#'
+      secondary={false}
+      primary={false}
+      accent={false}
+      plain={false} />
   )
 }

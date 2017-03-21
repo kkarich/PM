@@ -7,7 +7,7 @@ export default class ViewToolbarContainer extends React.Component {
         return (
             <div>
                 <CreateEventButton />
-                <ChangeWeekButton />
+                <ChangeWeekButton back={true}/>
                 <ChangeWeekButton />
             </div>
         );
